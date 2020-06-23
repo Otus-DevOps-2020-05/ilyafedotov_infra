@@ -20,4 +20,7 @@ ilyafedotov Infra repository
 
 bastion_IP = 84.201.175.83
 someinternalhost_IP = 10.130.0.26
+testapp_IP = 84.201.130.13
+testapp_port = 9292
+
         
