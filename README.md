@@ -17,4 +17,7 @@ ilyafedotov Infra repository
         User appuser
         ProxyCommand ssh -q -W %h:%p bastion
         
+
+bastion_IP = 84.201.175.83
+someinternalhost_IP = 10.130.0.26
         
