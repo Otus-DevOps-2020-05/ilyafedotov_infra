@@ -45,3 +45,4 @@ yc compute instance create \
 - Выполнено параметризирование шаблона (packer/variables.json.example)
 - Выполнена конфигурация bake-образа (packer/immutable.json)
 - Создан скрипт для создания VM create-reddit-vm.sh (config-scripts/create-reddit-vm.sh)
+
