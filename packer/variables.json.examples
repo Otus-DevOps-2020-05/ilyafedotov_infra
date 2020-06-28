@@ -1,0 +1,7 @@
+{
+    "cloud_folder_id": "abcd..xyz",
+    "service_account_key_file_path": "path-to-key.json",
+    "source_image_family_name": "ubuntu-1604-lts",
+    "image_name": "my-image-name-{{timestamp}}",
+    "platform_id": "standard-v1"
+}
