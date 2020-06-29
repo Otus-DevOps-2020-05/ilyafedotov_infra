@@ -1,5 +1,5 @@
 {
-    "cloud_folder_id": "",
+    "cloud_folder_id": "example_id",
     "service_account_key_file_path": "./key.json.example",
     "source_image_family_name": "ubuntu-1604-lts",
     "image_name": "my-image-{{timestamp}}",
