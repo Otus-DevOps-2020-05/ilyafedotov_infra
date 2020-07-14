@@ -46,3 +46,7 @@ yc compute instance create \
 - Выполнена конфигурация bake-образа (packer/immutable.json)
 - Создан скрипт для создания VM create-reddit-vm.sh (config-scripts/create-reddit-vm.sh)
 
+# HW-8
+- Создано описание инфраструктуры для развертывание с помощью Terraform
+
+
