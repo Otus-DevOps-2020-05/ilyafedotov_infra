@@ -1,0 +1,9 @@
+cloud_id = "aaaaaaaaaaaaaaaaa"
+folder_id = "bbbbbbbbbbbbbbbb"
+zone = "ru-central1-a"
+image_id = "cccccccccccccc"
+public_key_path = "ubuntu.pub.example"
+subnet_id = "eeeeeeeeeeeeeeee"
+service_account_key_file = "key.json.example"
+private_key_path = "ubuntu.example"
+app_instance_count = 1
