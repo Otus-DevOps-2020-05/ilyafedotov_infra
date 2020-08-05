@@ -15,7 +15,7 @@ module "app" {
   private_key_path= var.private_key_path
   app_disk_image  = var.app_disk_image
   subnet_id       = module.vpc.vm_subnet_id
-  db_url          = module.db.external_ip_address_db
+  db_ip          = module.db.external_ip_address_db
 }
 
 module "db" {
@@ -29,21 +29,3 @@ module "db" {
 module "vpc" {
   source = "../modules/vpc"
 }
-# connection {
-#   type  = "ssh"
-#   host  = self.network_interface.0.nat_ip_address
-#   user  = "ubuntu"
-#   agent = false
-#   # путь до приватного ключа
-#   private_key = file(var.private_key_path)
-# }
-
-# provisioner "file" {
-#   source      = "files/puma.service"
-#   destination = "/tmp/puma.service"
-# }
-
-# provisioner "remote-exec" {
-#   script = "files/deploy.sh"
-# }
-#}
