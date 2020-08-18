@@ -53,3 +53,9 @@ yc compute instance create \
 # HW-9 terraform-2
 - код организован в модули
 - переиспользование модулей
+
+# HW-9 ansible-1
+- знакомство с Ansible
+- добавлен скрипт inventory.sh генерирующий инвентори, используя "terraform show"
+
+
