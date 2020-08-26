@@ -32,17 +32,17 @@ resource "yandex_compute_instance" "db" {
   }
 
   
-   provisioner "file" {
-    source      = "../modules/db/files/install_mongodb.sh"
-    destination = "/tmp/install_mongodb.sh"
-  }
-
-  provisioner "remote-exec" {
-    inline = [
-      "export LC_ALL=C",
-      "chmod +x /tmp/install_mongodb.sh",
-      "/tmp/install_mongodb.sh",
-    ]
-    
-}
+//  provisioner "file" {
+//    source      = "../modules/db/files/install_mongodb.sh"
+//    destination = "/tmp/install_mongodb.sh"
+//  }
+//
+//  provisioner "remote-exec" {
+//    inline = [
+//      "export LC_ALL=C",
+//      "chmod +x /tmp/install_mongodb.sh",
+//      "/tmp/install_mongodb.sh",
+//    ]
+//    
+//}
 }

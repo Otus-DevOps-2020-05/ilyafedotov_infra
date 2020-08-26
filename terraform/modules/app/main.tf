@@ -32,24 +32,24 @@ connection {
     private_key = file(var.private_key_path)
   }
 
-  provisioner "file" {
-    source      = "../modules/app/files/puma.service"
-    destination = "/tmp/puma.service"
-  }
-
-  provisioner "file" {
-    source      = "../modules/app/files/deploy.sh"
-    destination = "/tmp/deploy.sh"
-  }
+//  provisioner "file" {
+//    source      = "../modules/app/files/puma.service"
+//    destination = "/tmp/puma.service"
+//  }
+//
+//  provisioner "file" {
+//    source      = "../modules/app/files/deploy.sh"
+//    destination = "/tmp/deploy.sh"
+//  }
   
   provisioner "remote-exec" {
     inline = ["export DATABASE_URL=${var.db_ip}"]
   }
 
-  provisioner "remote-exec" {
-    inline = [
-      "chmod +x /tmp/deploy.sh",
-      "/tmp/deploy.sh",
-    ]
-}
+//  provisioner "remote-exec" {
+//    inline = [
+//      "chmod +x /tmp/deploy.sh",
+//      "/tmp/deploy.sh",
+//    ]
+//}
 }
