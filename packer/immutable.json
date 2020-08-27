@@ -15,23 +15,23 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "scripts/install_ruby.sh",
+            "script": "packer/scripts/install_ruby.sh",
             "pause_before": "60s",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "shell",
-            "script": "scripts/install_mongodb.sh",
+            "script": "packer/scripts/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "shell",
-            "script": "scripts/deploy.sh",
+            "script": "packer/scripts/deploy.sh",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "file",
-            "source": "files/puma.service",
+            "source": "packer/files/puma.service",
             "destination": "/tmp/puma.service"
         },
         {
