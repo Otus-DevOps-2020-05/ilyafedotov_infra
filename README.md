@@ -1,5 +1,6 @@
 # ilyafedotov_infra
 ilyafedotov Infra repository
+[![Build Status](https://travis-ci.com/Otus-DevOps-2020-05/ilyafedotov_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2020-05/ilyafedotov_infra)
 
 Подключение к someinternalhost в одну строку:
 ```
@@ -28,8 +29,6 @@ testapp_IP = 84.201.130.13
 testapp_port = 9292
 ```
         
-[![Build Status](https://travis-ci.com/Otus-DevOps-2020-05/ilyafedotov_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2020-05/ilyafedotov_infra)
-
 Создание инстанса с использованием startup script:
 ```
 yc compute instance create \
